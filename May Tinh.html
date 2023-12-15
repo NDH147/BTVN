@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh</title>
+</head>
+<body>
+
+<H1>MÁY TÍNH</H1>
+<input type="text" id="tt1"; style="width: 80px">
+<input type="text" id="tt2"; style="width: 80px">
+<br>
+<br>
+<Button onclick="Tong()">Cộng(+)</Button>
+<Button onclick="Hieu()">Trừ(-)</Button>
+<Button onclick="Tich()">Nhân(x)</Button>
+<Button onclick="Thuong()">Chia(/)</Button>
+<br>
+<h2 id="tong">KET QUA : </h2>
+
+<script>
+    function Tong(){
+        let a = + document.getElementById('tt1').value;
+        let b = + document.getElementById('tt2').value;
+        let T = a + b;
+        document.getElementById('tong').innerHTML ="KET QUA : " + T;
+
+    };
+    function Hieu(){
+        let a = + document.getElementById('tt1').value;
+        let b = + document.getElementById('tt2').value;
+        let H = a-b;
+        document.getElementById('tong').innerHTML ="KET QUA : " + H ;
+
+    };
+    function Tich(){
+        let a = + document.getElementById('tt1').value;
+        let b = + document.getElementById('tt2').value;
+        let X = a*b;
+        document.getElementById('tong').innerHTML ="KET QUA : " + X;
+
+    };
+    function Thuong(){
+        let a = + document.getElementById('tt1').value;
+        let b = + document.getElementById('tt2').value;
+        let C = a/b;
+        document.getElementById('tong').innerHTML ="KET QUA : " + C;
+
+    };
+</script>
+
+</body>
+</html>
